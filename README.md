@@ -154,17 +154,17 @@ alb_dns_name = "vivien-ASG-1183566190.eu-central-1.elb.amazonaws.com"
 * Hit the Application Load balancer to confirm communication with the instances
 
 ```
-curl $(terraform output -raw alb_dns_name):8080
+curl $(terraform output -raw alb_dns_name)
 ```
 
 _sample_:
 
 ```
-curl $(terraform output -raw alb_dns_name):80
+curl $(terraform output -raw alb_dns_name)
 Sapee
 ```
 
-_Or in a web browser:_
+_Or in a web browser (paste the alb_dns_name output's value):_
 
 ![image](https://user-images.githubusercontent.com/85481359/132232786-6a5470cb-fb9c-4d54-aad0-92cd90ec3171.png)
 
